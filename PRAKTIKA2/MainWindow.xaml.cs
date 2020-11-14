@@ -24,10 +24,10 @@ namespace PRAKTIKA2
         {
             InitializeComponent();
         }
-        private void AAA(object sender, RoutedEventArgs e)
+        private void Вычислить_Click(object sender, RoutedEventArgs e)
         {
-            int x = Convert.ToInt32(AAA);  // Длина строки
-            string text = Convert.ToString(AAA); // Текст
+            int x = Convert.ToInt32(Dlina.Text);  // Длина строки
+            string text = Convert.ToString(Stroka.Text); // Текст
 
             if (text.Length == x)
             {
@@ -41,9 +41,9 @@ namespace PRAKTIKA2
                     text = text.Replace("******", "***");
                 }
 
-                AAA = Convert.ToString(text); // Вывод
+                Otvet.Text = Convert.ToString(text); // Вывод
             }
-            else { AAA = Convert.ToString(" Ошибка! Неверное количество символов. "); } // Вывод
+            else { Otvet.Text = Convert.ToString(" Ошибка! Неверное количество символов. "); } // Вывод
         }
     }
 }
